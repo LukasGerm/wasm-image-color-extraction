@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module">
+        import init,{ extract_color } from './src/wasm_image_color_extraction.js';
+        async function extractColor() {
+            console.log(await extract_color("https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s"))
+        }
+        init().then(() => {
+
+            document.getElementById("button").addEventListener("click", extractColor);
+        })
+
+
+    </script>
+</head>
+
+<body>
+
+    <button id="button">Click me</button>
+    
+    <script type="module" src="./src/wasm_image_color_extraction.js"></script>
+</body>
+
+</html>
