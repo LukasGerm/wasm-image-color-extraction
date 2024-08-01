@@ -1,0 +1,6 @@
+node_modules
+src/*.js
+src/*.wasm
+src/*.ts
+src/*.md
+src/*.json

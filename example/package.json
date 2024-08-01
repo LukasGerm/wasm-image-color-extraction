@@ -1,0 +1,15 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "wasm-pack build --target web && mv ../pkg/* ./src/",
+    "dev": "ws"
+  },
+  "devDependencies": {
+    "local-web-server": "5.4.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

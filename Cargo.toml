@@ -1,6 +1,6 @@
 [package]
 name = "wasm-image-color-extraction"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Lukas Germerott <lukas@lukasgermerott.de>"]
 edition = "2018"
 
